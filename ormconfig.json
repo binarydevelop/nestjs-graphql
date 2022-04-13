@@ -1,0 +1,18 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": "5432",
+    "username": "postgres",
+    "password": "Tushar21",
+    "database": "pets_db",
+    "synchronize": true,
+    "logging": true,
+    "entities": ["dist/**/*.entity.js"],
+    "seeds": ["src/database/seeds/*.ts"],
+    "migrations": ["./dist/database/migrations/*.js"],
+    "cli": {
+        "entitiesDir": "dist",
+        "migrationsDir": "./src/database/migrations"
+    }
+    
+} 
